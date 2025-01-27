@@ -58,10 +58,10 @@
 | NF28 | The system shall ensure that the internal communication LAN supports a data transfer rate of 20–40 Mbps to facilitate data transfers between workstations and the virtual telescope system.
 
 ## Requirement Gathering
-https://chatgpt.com/share/67979048-f37c-8008-b165-aca434486abd  /
-https://chatgpt.com/share/679792dd-5864-8003-ad65-df71347c2722 /
-https://chatgpt.com/share/679790d8-5a6c-800f-b51b-7552be7b9394 /
-https://chatgpt.com/share/679799b9-dca4-8011-913e-18adca68e112  /
+https://chatgpt.com/share/67979048-f37c-8008-b165-aca434486abd  <br />
+https://chatgpt.com/share/679792dd-5864-8003-ad65-df71347c2722 <br />
+https://chatgpt.com/share/679790d8-5a6c-800f-b51b-7552be7b9394 <br />
+https://chatgpt.com/share/679799b9-dca4-8011-913e-18adca68e112  <br />
 
 ## Group Members
 | ID | Name |
