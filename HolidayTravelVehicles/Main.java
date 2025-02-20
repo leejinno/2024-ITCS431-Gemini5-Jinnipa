@@ -4,7 +4,7 @@ public class Main {
         Customer customer = new Customer("C001", "John Doe", "123 Main St", "555-1234");
 
         // Create a salesperson
-        Salesperson salesperson = new Salesperson("S001", "Jane Smith", "456 Elm St", "555-5678", 10);
+        Salesperson salesperson = new Salesperson("S001", "Jane Smith", "456 Main St", "555-5678", 10);
 
         // Create a vehicle
         Vehicle vehicle = new Vehicle("V001", "Toyota", "Camry", "2022", "Toyota", 25000, "Available");
