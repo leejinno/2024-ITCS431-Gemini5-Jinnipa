@@ -5,6 +5,7 @@ public class Main {
         Salesperson salesperson = new Salesperson("S001", "Jane Smith", "456 Main St", "555-5678", 10);
 
         Vehicle vehicle = new Vehicle("V001", "Toyota", "Camry", "2022", "Toyota", 25000, "Available");
+        System.out.println(vehicle.toString() + "\n");
 
         Invoice invoice = new Invoice();
         invoice.setInvoiceID("INV001");
