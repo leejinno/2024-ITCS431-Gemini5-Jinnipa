@@ -21,13 +21,21 @@ jobs:
         with:
           java-version: '11'
 
-      - name: Compile Java
+      - name: Detect and Set Working Directory
+        id: detect_dir
         run: |
-          cd Benjaphol/HolidayTravelVehicles
-          javac -d . *.java
+          WORK_DIR="HolidayTravelVehicles"
 
-      - name: Run main class
+          if [ -d "$WORK_DIR" ]; then
+            echo "Found directory: $WORK_DIR"
+            echo "BUILD_DIR=$WORK_DIR" >> $GITHUB_ENV
+          else
+            echo "Error: Expected directory $WORK_DIR not found!"
+            exit 1
+          fi
+
+      - name: Compile and Run Java
         run: |
-          cd Benjaphol/HolidayTravelVehicles
-          # If your main class is in a package, specify the full package path, e.g., java com.example.Main
-          java Main
+          cd "$BUILD_DIR"
+          javac -d . *.java
+          java Main  # Replace 'Main' with the actual class name
