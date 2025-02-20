@@ -3,26 +3,41 @@ name: Java CI
 on:
   push:
     branches:
-      - Punyaporn
+      
+Punyaporn
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        ref: ${{ github.event.pull_request.head.ref }}
-        fetch-depth: ${{ env.PR_FETCH_DEPTH }}
+    
+name: Checkout code
+    uses: actions/checkout@v3
 
-    - name: Set up JDK
-      uses: actions/setup-java@v1
-      with:
-        java-version: '11' # You can change this to the version you want
+    
+name: Set up JDK
+    uses: actions/setup-java@v1
+    with:
+      java-version: '11'
 
-    - name: Compile Java
-      run: |
-        cd Punyaporn/HolidayTravelVehicles 
-        javac -d . *.java
-      # Compile java file from directory
+    
+name: Detect and Set Working Directory
+    id: detect_dir
+    run: |
+      WORK_DIR="HolidayTravelVehicles"
+
+        if [ -d "$WORK_DIR" ]; then
+          echo "Found directory: $WORK_DIR"
+          echo "BUILD_DIR=$WORK_DIR" >> $GITHUB_ENV
+        else
+          echo "Error: Expected directory $WORK_DIR not found!"
+          exit 1
+        fi
+
+    
+name: Compile and Run Java
+    run: |
+      cd "$BUILD_DIR"
+      javac -d . *.java
+      java Main  # Replace 'Main' with the actual class name
