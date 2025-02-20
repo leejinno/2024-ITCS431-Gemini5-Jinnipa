@@ -35,4 +35,4 @@ jobs:
       run: |
         cd "$BUILD_DIR"
         javac -d . *.java
-        java Main  # Replace 'Main' with the actual class name
+        java VehicleMain  # Replace 'VehicleMain' with the actual class name
