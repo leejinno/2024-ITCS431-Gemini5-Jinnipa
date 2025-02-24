@@ -101,3 +101,14 @@
 
 ## Class Diagram
 ![Gemini 5 Class Diagram](images/Gemini5%20-%20class%20did.jpg)
+
+## Group Members
+
+| ID | Name |
+| :---- | :---- |
+| 6588051 | Benjaphol Kositanon |
+| 6588075 | Sorawit Piriyapanyaporn |
+| 6588152 | Jinnipa Leepong |
+| 6588164 | Thonthan Arunyawas |
+| 6588178 | Nichakul Kongnual |
+| 6588187 | Punyaporn Putthajaksri |
